@@ -1,0 +1,30 @@
+{% extends 'statusflex/base.html' %}
+
+{% block content %}
+    {% if services_status == 0 %}
+        <div class="statusSummary ssSuccess">
+            <i style="color: green;" class="far fa-check-circle"></i> All services are available. No failures reported.
+        </div>
+    {% elif services_status == 1 %}
+        <div class="statusSummary ssFailure">
+            <i style="color: darkred;" class="fas fa-exclamation-triangle"></i> Total failure: Everything down.
+        </div>
+    {% elif services_status == 2 %}
+    <div class="statusSummary ssFalied">
+        <i style="color: darkred;" class="fas fa-exclamation-triangle"></i> {{ unavailable_services }} of {{ all_services }} services aren't responding.
+    </div>
+    {% endif %}
+
+    {% for service in services %}
+        <a id="service_{{service.id}}" class="serviceTitle" href="reports/{{ service.id }}"><h2>
+            {% if service.prechecked == True and service.waiting_for_response == True %}
+                <i style="color: lightblue;" class="fas fa-sync-alt"></i>
+            {% elif service.available == False %}
+                <i style="color: orange;" class="fas fa-exclamation-triangle"></i>
+            {% else %}
+                <i style="color: green;" class="far fa-check-circle"></i>
+            {% endif %}
+            {{ service }}
+        </h2></a>
+    {% endfor %}
+{% endblock %}

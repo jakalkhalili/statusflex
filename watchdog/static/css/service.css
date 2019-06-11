@@ -1,0 +1,37 @@
+.statusSummary {
+    display: block;
+    padding: 25px 35px;
+    font-size: 135%;
+    margin-bottom: 25px;
+}
+
+.ssSuccess {
+    background-color: lightgreen;
+    color: green;
+}
+
+.ssFalied {
+    background-color: #FFB366;
+    color: darkred;
+}
+
+.ssFailure {
+    background-color: pink;
+    color: red;
+}
+
+.container h2 {
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+
+.container a.serviceTitle {
+    color: black;
+}
+
+.container a.serviceTitle:hover {
+    color: grey;
+}

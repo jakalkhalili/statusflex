@@ -1,0 +1,22 @@
+<!doctype html>
+{% load static %}
+<title>Statusflex Alpha</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/statusflex.css' %}">
+<link rel="stylesheet" href="{% static 'css/service.css' %}">
+<link rel="stylesheet" href="{% static 'css/reports.css' %}">
+<header>
+    <div class="logoBar">
+        <a {% if request.path == "/" %} class="active" {% endif %} href="/">Statusflex</a>
+    </div>
+</header>
+
+<div class="container">
+    {% block content %}
+    {% endblock %}
+</div>
+
+<footer>
+    Status page software by Statusflex Alpha 1.0
+</footer>

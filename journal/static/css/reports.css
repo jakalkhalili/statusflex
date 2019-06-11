@@ -1,0 +1,60 @@
+.container h1 {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.container h2 {
+    display: inline-block;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+
+.summary {
+    text-align: center;
+}
+
+.report {
+    border: 0.25px solid dashed;
+    padding: 20px 20px;
+    margin-top: 25px;
+}
+
+.report-indicator {
+    display: block;
+    color: lightgrey;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+.reportInfo {
+    background-color: lightblue;
+}
+
+.reportWarning {
+    background-color: #FFB366;
+}
+
+.reportFailure {
+    background-color: pink;
+}
+
+.reportSuccess {
+    background-color: lightgreen;
+}
+
+.report h2 {
+    margin-left: -11px;
+    margin-top: -20px !important;
+}
+
+.report p {
+    margin-top: -10px;
+}
+
+.report i {
+   margin-top: -5px;
+   font-size: 75%;
+}

@@ -1,0 +1,64 @@
+
+    * {
+        font-family: 'Noto Sans HK', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: whitesmoke;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    div.logoBar {
+        background-color: #2C3E50;
+        position: fixed;
+        top:0;
+        right:0;
+        left:0;
+    }
+
+    div.logoBar a {
+        color: white;
+        font-weight: bold;
+        padding-top: 2.5px;
+        padding-bottom: 2.5px;
+        font-size: 130%;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 2px solid #2C3E50;
+    }
+
+    div.logoBar a:hover {
+        border-bottom: 2px solid white;
+    }
+
+    div.logoBar a.active {
+        border-bottom: 2px solid white;
+    }
+
+    .container {
+        width: 75%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+
+    footer {
+        border-top: 0.5px solid grey;
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+        color: grey;
+        padding-top: 5px;
+        font-size: 80%;
+        margin-top: 25px;
+        padding-bottom: 25px;
+    }
